@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.martin.filme.PrincipalActivity"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/controleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Controle Filmes"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/tituloEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|right"
+        android:ems="10"
+        android:hint="@string/digite_aqui_titulo"
+        android:inputType="text"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/urlEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|right"
+        android:ems="10"
+        android:hint="@string/digite_aqui_url"
+        android:inputType="text"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/generoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|right"
+        android:ems="10"
+        android:hint="@string/digite_aqui_genero"
+        android:inputType="text"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/avaliacaoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|right"
+        android:ems="10"
+        android:hint="@string/digite_aqui_avaliacao"
+        android:inputType="numberDecimal"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/lancamentoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|right"
+        android:ems="10"
+        android:hint="@string/digite_aqui_lancamento"
+        android:inputType="date"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/adicaoImageButton"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:src="@android:drawable/ic_input_add" />
+
+        <ImageButton
+            android:id="@+id/removerImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_delete"
+            android:background="#000000" />
+
+        <ImageButton
+            android:id="@+id/editarImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_edit"
+            android:background="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView" />
+    </LinearLayout>
+</LinearLayout>

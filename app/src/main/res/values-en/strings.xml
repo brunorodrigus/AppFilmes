@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="digite_aqui_titulo"><font fgcolor='#FFFFFF'>Title...</font></string>
+    <string name="digite_aqui_url"><font fgcolor='#FFFFFF'>Image URL...</font></string>
+    <string name="digite_aqui_genero"><font fgcolor='#FFFFFF'>Gender...</font></string>
+    <string name="digite_aqui_avaliacao"><font fgcolor='#FFFFFF'>Rating...</font></string>
+    <string name="digite_aqui_lancamento"><font fgcolor='#FFFFFF'>Release...</font></string>
+    <string name="imagem"><font fgcolor='#FFFFFF'>Imagem...</font></string>
+
+</resources>
